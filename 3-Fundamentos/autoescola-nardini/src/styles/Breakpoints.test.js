@@ -1,4 +1,4 @@
-import { BreakpointSizes, breakAt } from "../styles/Breakpoints";
+import { BreakpointSizes, breakAt } from "./Breakpoints";
 
 test.each([
     [BreakpointSizes.sm],
