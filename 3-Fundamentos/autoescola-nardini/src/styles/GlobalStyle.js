@@ -4,17 +4,14 @@ import { Helmet } from 'react-helmet';
 
 import { BreakpointSizes, breakAt } from "./Breakpoints";
 
-const colorYellow = '#ffc107';
-
 const GlobalStyle = createGlobalStyle`
-        
-    html {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 100%;
-        color: #212121;
-        box-sizing: border-box;
-    }
+  html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    color: #212121;
+    box-sizing: border-box;
+  }
 
     *, *:before, *:after {
         box-sizing: inherit;
@@ -24,15 +21,15 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.3;
-        font-weight: 700;
-        letter-spacing: 2px;
+  h1, h2, h3, h5, h6 {
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 2px;
 
-        strong {
-            color: ${colorYellow};
-        }
+    strong {
+      color: #ffc107;
     }
+  }
 
     h1 {
         font-size: 2.5rem;
