@@ -5,7 +5,7 @@ import BgHighwayImage from 'stories/assets/bg-highway.jpg';
 import BgCarImage from 'stories/assets/bg-car.jpg';
 import Heading from 'components/atoms/Heading';
 import Button from 'components/atoms/Button';
-import Hero from './Hero';
+import Hero from 'components/molecules/Hero';
 
 export default {
     title: "Components/Molecules/Hero",

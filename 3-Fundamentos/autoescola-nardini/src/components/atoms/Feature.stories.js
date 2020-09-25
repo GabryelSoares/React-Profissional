@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from 'react-icons/fa';
 
-import Feature from './Feature';
+import Feature from 'components/atoms/Feature';
 import Grid from 'components/atoms/Grid';
 
 export default {
