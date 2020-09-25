@@ -10,6 +10,8 @@ import Feature from 'components/atoms/Feature';
 import Section from 'components/molecules/Section';
 
 import HeroImage from 'assets/hero.jpg';
+import AboutVideo from 'assets/about.mp4';
+import Footer from 'components/organisms/Footer';
 
 const Home = () => (
     <>
@@ -46,6 +48,33 @@ const Home = () => (
                 </Feature>
             </Grid>
         </Section>
+        <Section inverse>
+            <Heading>
+                <h2>Conheça nossos serviços</h2>
+            </Heading>
+        </Section>
+        <Section>
+            <Grid md={2}>
+                <div>
+                    <Heading>
+                        <h2>Nardini Auto Escola</h2>
+                    </Heading>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <Button color="primary">Saiba mais</Button>
+                </div>
+                <div>
+                    <video src={AboutVideo} width="100%" autoPlay loop />
+                </div>
+            </Grid>
+        </Section>
+        <Section inverse>
+            <Heading>
+                <h2>Dúvidas recorrentes</h2>
+            </Heading>
+        </Section>
+        <Footer />
     </>
 );
 
