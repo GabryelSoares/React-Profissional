@@ -60,6 +60,6 @@
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1",
-    "webpack": "^4.44.2"
+    "webpack": "4.42.0"
   }
 }
