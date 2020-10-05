@@ -1,5 +1,7 @@
 # Auto Escola Nardini
 
+![CircleCI](https://img.shields.io/circleci/build/github/GabryelSoares/React-Profissional)
+
 Este projeto foi desenvolvido durante o curso [React Profissional](http://www.nardiniacademy.com).
 
 Resultado final:
