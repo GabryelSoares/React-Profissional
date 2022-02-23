@@ -1,13 +1,13 @@
 # Auto Escola Nardini
 
-![CircleCI](https://img.shields.io/circleci/build/github/GabryelSoares/React-Profissional)
+![CircleCI](https://img.shields.io/circleci/build/github/megatroom/autoescola-nardini)
+![Codecov](https://img.shields.io/codecov/c/github/megatroom/autoescola-nardini)
 
-Este projeto foi desenvolvido durante o curso [React Profissional](http://www.nardiniacademy.com).
+Este projeto foi desenvolvido durante o curso [React Profissional](https://nardiniacademy.com).
 
 Resultado final:
 
- - [Demontração online da aplicação](https://curso-react-profissional-nardini-academy-o0wjvcl28.vercel.app)
+- [Demonstração online da aplicação](https://autoescola-nardini.vercel.app/)
+- [Biblioteca de componentes](https://master--5f1eff5e22eade0022d4d27d.chromatic.com)
 
-  - [Biblioteca de componentes](https://5f74796bdb7df10022b6051e-riaghmubmz.chromatic.com)
-
-Todos os detalhes estão no [site da Nardini Academy](http://www.nardiniacademy.com)
+Todos os detalhes estão no [site da Nardini Academy](https://nardiniacademy.com).

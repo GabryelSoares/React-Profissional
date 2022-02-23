@@ -1,64 +1,54 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 
-import Container from 'components/atoms/Container';
+import Container from "components/atoms/Container";
 
 const Root = styled.div`
-    color: #fff;
-    padding: 100px 0;
+  color: #fff;
+  padding: 100px 0;
 
-    ${(props) => css`
-        background: url(${props.image}), rgba(0,0,0, 0.4);
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: overlay;
-    `}
+  ${(props) => css`
+    background: url(${props.image}), rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  `}
 `;
 
 const Content = styled.div`
-    display: inline-block;
+  display: inline-block;
 
-    p, 
-    li {
-        font-size: 20px;
-        font-weight: 300;
-    }
+  p,
+  li {
+    font-size: 20px;
+    font-weight: 300;
+  }
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-    li {
-        &::before {
-            content: "\\2713\\0020";
-            color: ${(props) => props.theme.colors.primary.main};
-        }
+  li {
+    &::before {
+      content: "\\2713\\0020";
+      color: ${(props) => props.theme.colors.primary.main};
     }
+  }
 `;
 
 const Hero = ({ image, children }) => (
-    <Root image={image} data-testid="hero">
-        <Container>
-            {/* <Title /> */}
-            <Content>{children}</Content>
-        </Container>
-    </Root>
+  <Root image={image} data-testid="hero">
+    <Container>
+      <Content>{children}</Content>
+    </Container>
+  </Root>
 );
 
 Hero.propTypes = {
-    /**
-    * Background image
-    */
-    image: PropTypes.string,
-    // title: PropTypes.string.isRequired,
-    // title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-    children: PropTypes.node,
+  image: PropTypes.string,
+  children: PropTypes.node,
 };
-
-// Hero.defaultProps = {
-//     title: "Meu titulo",
-// };
 
 export default Hero;
