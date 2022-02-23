@@ -1,22 +1,23 @@
-import React from 'react';
-import { addDecorator, addParameters } from '@storybook/react';
-import { select } from '@storybook/addon-knobs';
+import React from "react";
+import { addDecorator, addParameters } from "@storybook/react";
+import { select } from "@storybook/addon-knobs";
+import { MemoryRouter as Router } from "react-router-dom";
 
-import GlobalStyle from '../src/styles/GlobalStyle';
-import ThemeProvider, { ThemeNames } from '../src/styles/ThemeProvider';
+import GlobalStyle from "../src/styles/GlobalStyle";
+import ThemeProvider, { ThemeNames } from "../src/styles/ThemeProvider";
 
 addDecorator((storyFn) => (
-  <>
+  <Router>
     <ThemeProvider theme={select("Theme", ThemeNames, ThemeNames.light)}>
       <GlobalStyle />
       {storyFn()}
     </ThemeProvider>
-  </>
+  </Router>
 ));
 
 const viewports = {
   extraSmall: {
-    name: "Protrair phone (default)",
+    name: "Portrait phone (default)",
     styles: {
       width: "360px",
       height: "640px",
@@ -54,10 +55,6 @@ const viewports = {
 
 addParameters({
   viewport: {
-    viewports
-  }
+    viewports,
+  },
 });
-
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}

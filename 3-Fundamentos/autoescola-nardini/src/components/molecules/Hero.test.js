@@ -1,25 +1,24 @@
-import React from 'react';
-import { render } from 'test-utils';
+import React from "react";
+import { render } from "test-utils";
 
-import Hero from './Hero';
+import Hero from "./Hero";
 
-test('renders Hero with children', () => {
-    const { getByText } = render(
-        <Hero>
-            <p>Gabryel Soares</p>
-        </Hero>
-    );
+test("renders Hero with children", () => {
+  const { getByText } = render(
+    <Hero>
+      <p>Bruno Nardini</p>
+    </Hero>
+  );
 
-    expect(getByText("Gabryel Soares")).toBeInTheDocument();
+  expect(getByText("Bruno Nardini")).toBeInTheDocument();
 });
 
 test("renders image background", () => {
-    const image = "http://test/image.jpg";
+  const image = "http://test/image.jpg";
 
-    const { getByTestId } = render(<Hero image={image} />);
+  const { getByTestId } = render(<Hero image={image} />);
 
-    expect(getByTestId("hero")).toHaveStyleRule({
-        backgroundImage: image,
-    });
-
+  expect(getByTestId("hero")).toHaveStyleRule({
+    backgroundImage: image,
+  });
 });

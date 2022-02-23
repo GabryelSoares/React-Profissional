@@ -1,11 +1,10 @@
-import React from 'react';
-import { render } from 'test-utils';
+import React from "react";
+import { render } from "test-utils";
 
-import Heading from './Heading';
+import Heading from "./Heading";
 
-test('match snapshot', () => {
-    const { asFragment } = render(<Heading>Title</Heading>);
+test("match snapshot", () => {
+  const { asFragment } = render(<Heading>Title</Heading>);
 
-    expect(asFragment()).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });
-

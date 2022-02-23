@@ -1,2 +1,2 @@
-export { default } from './Accordion.js';
-export { default as AccordionGroup } from './AccordionGroup.js';
+export { default } from "./Accordion";
+export { default as AccordionGroup } from "./AccordionGroup";

@@ -1,7 +1,7 @@
-import React from 'react';
-import { render, fireEvent } from 'test-utils';
+import React from "react";
+import { render, fireEvent } from "test-utils";
 
-import Button, { ButtonColors, ButtonsVariants } from './Button';
+import Button, { ButtonColors, ButtonsVariants } from "./Button";
 
 test("renders a text", () => {
   const { getByText } = render(<Button>Click here</Button>);
@@ -16,7 +16,7 @@ test("trigger event on click", () => {
 
   fireEvent.click(getByRole("button"));
 
-    expect(handleClick).toBeCalled();
+  expect(handleClick).toBeCalled();
 });
 
 test.each(Object.values(ButtonColors).map((item) => [item]))(
